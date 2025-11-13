@@ -1,0 +1,14 @@
+artifact_uri: file:///C:/Users/rlotte/Documents/git/bootcamp/demonstrate-dvc/src/mlruns/662798617150615364/1e3a065e841b45f3b47863b05b0181f6/artifacts
+end_time: 1763065852265
+entry_point_name: ''
+experiment_id: '662798617150615364'
+lifecycle_stage: active
+run_id: 1e3a065e841b45f3b47863b05b0181f6
+run_name: whimsical-croc-645
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1763065467773
+status: 3
+tags: []
+user_id: rlotte

@@ -24,6 +24,6 @@ class SyntheticSegDataset(Dataset):
         img = np.array(img).astype(np.float32)/255.0
         mask = np.array(mask).astype(np.int64)
 
-        img = torch.from_numpy(img.transpose(2,0,1)).float()
+        img = torch.from_numpy(img.transpose(2, 0, 1)).float()
         mask = torch.from_numpy(mask).long()
         return img, mask

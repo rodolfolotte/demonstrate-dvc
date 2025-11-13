@@ -1,0 +1,8 @@
+[core]
+    remote = dvc-project
+['remote "dvc"']
+    url = https://drive.google.com/drive/folders/1iK6rGnAkR79sJHZmFW8wMWZyE-V-TPAF
+['remote "myremote"']
+    url = gdrive://1iK6rGnAkR79sJHZmFW8wMWZyE-V-TPAF
+['remote "dvc-project"']
+    url = gdrive://1iK6rGnAkR79sJHZmFW8wMWZyE-V-TPAF
