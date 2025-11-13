@@ -1,0 +1,10 @@
+artifact_location: file:///C:/Users/rlotte/Documents/git/bootcamp/demonstrate-dvc/src/mlruns/662798617150615364/models/m-64d7ded881804cfd9b098b8777ebf9d8/artifacts
+creation_timestamp: 1763057677083
+experiment_id: '662798617150615364'
+last_updated_timestamp: 1763057703590
+model_id: m-64d7ded881804cfd9b098b8777ebf9d8
+model_type: null
+name: model
+source_run_id: 174b2d73e3b140e28fee0a8d91a67777
+status: 2
+status_message: null

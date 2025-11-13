@@ -1,0 +1,23 @@
+artifact_path: file:///C:/Users/rlotte/Documents/git/bootcamp/demonstrate-dvc/src/mlruns/662798617150615364/models/m-64d7ded881804cfd9b098b8777ebf9d8/artifacts
+flavors:
+  python_function:
+    config:
+      device: null
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.pytorch
+    pickle_module_name: mlflow.pytorch.pickle_module
+    python_version: 3.12.1
+  pytorch:
+    code: null
+    model_data: data
+    pytorch_version: 2.9.1+cpu
+mlflow_version: 3.6.0
+model_id: m-64d7ded881804cfd9b098b8777ebf9d8
+model_size_bytes: 31123703
+model_uuid: m-64d7ded881804cfd9b098b8777ebf9d8
+prompts: null
+run_id: 174b2d73e3b140e28fee0a8d91a67777
+utc_time_created: '2025-11-13 18:14:37.281891'
