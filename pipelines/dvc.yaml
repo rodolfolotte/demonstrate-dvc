@@ -1,0 +1,24 @@
+stages:
+  preprocess:
+    cmd: python src/preprocess.py data/raw data/processed/dataset.csv
+    deps:
+      - src/preprocess.py
+    outs:
+      - data/processed/dataset.csv
+
+  train:
+    cmd: python src/train.py data/processed/dataset.csv models/model.pkl
+    deps:
+      - src/train.py
+      - data/processed/dataset.csv
+    outs:
+      - models/model.pkl
+    metrics:
+      - metrics/metrics.json
+      - metrics/plots/roc_curve.png
+
+  evaluate:
+    cmd: python src/evaluate.py
+    deps:
+      - src/evaluate.py
+      - metrics/metrics.json

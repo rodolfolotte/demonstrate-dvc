@@ -1,0 +1,34 @@
+name: CI/CD - MLOps Demo
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-train:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements.txt
+          pip install dvc[gs] mlflow
+
+      - name: Reproduce DVC pipeline
+        run: dvc repro
+
+      - name: Push updated metrics
+        run: |
+          dvc push
+          git add metrics/ dvc.lock
+          git commit -m "Update metrics after pipeline run" || echo "No changes"
+          git push
